@@ -1,0 +1,4 @@
+tabulate
+requests
+prettytable
+PySockLib
