@@ -1,69 +1,57 @@
-# #Author  : Hackfut
-#Contact : t.me/H4ckfutSec
-#License : MIT
-#[Warning] I am not responsible for the way you will use this program [Warning]
-
-#██╗░░██╗░█████╗░░█████╗░██╗░░██╗███████╗██╗░░░██╗████████╗
-#██║░░██║██╔══██╗██╔══██╗██║░██╔╝██╔════╝██║░░░██║╚══██╔══╝
-#███████║███████║██║░░╚═╝█████═╝░█████╗░░██║░░░██║░░░██║░░░
-#██╔══██║██╔══██║██║░░██╗██╔═██╗░██╔══╝░░██║░░░██║░░░██║░░░
-#██║░░██║██║░░██║╚█████╔╝██║░╚██╗██║░░░░░╚██████╔╝░░░██║░░░
-#╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░░╚═════╝░░░░╚═╝░░░
-
 # ProxGrab
 
-ProxGrab est un outil permettant de récupérer des proxies publics de type HTTP, SOCKS4 et SOCKS5 à partir d'une API, de vérifier leur validité, et de les sauvegarder dans un fichier pour une utilisation ultérieure. Ce projet est conçu pour être utilisé principalement par les chercheurs en sécurité et les professionnels de l'anonymat en ligne.
+ProxGrab is a tool that allows you to fetch public HTTP, SOCKS4, and SOCKS5 proxies from an API, verify their validity, and save them to a file for later use. This project is primarily designed for security researchers and online anonymity professionals.
 
-## Fonctionnalités
+## Features
 
-- **Récupération de proxies** : Téléchargez des proxies publics de différents types (HTTP, SOCKS4, SOCKS5).
-- **Vérification de la validité** : Vérifiez si les proxies sont accessibles avant de les enregistrer.
-- **Informations sur les IP** : Obtenez des informations géographiques (pays, ville) associées à chaque proxy.
-- **Enregistrement des proxies valides** : Sauvegardez les proxies valides dans un fichier texte avec un nom unique si nécessaire.
-- **Interface utilisateur** : Interface en ligne de commande simple avec des options de sélection pour le type de proxy et le pays.
+- **Proxy Retrieval**: Download public proxies of various types (HTTP, SOCKS4, SOCKS5).
+- **Validity Check**: Verify if the proxies are accessible before saving them.
+- **IP Information**: Get geographical information (country, city) associated with each proxy.
+- **Save Valid Proxies**: Save valid proxies to a text file with a unique name if needed.
+- **User Interface**: Simple command-line interface with selection options for proxy type and country.
 
 ## Installation
 
-### Prérequis
+### Prerequisites
 
-1. **Python 3.6+** : Le script est écrit en Python et nécessite Python version 3.6 ou supérieure.
-2. **Bibliothèques Python** : Installez les bibliothèques nécessaires via pip :
+1. **Python 3.6+**: The script is written in Python and requires Python 3.6 or later.
+2. **Python Libraries**: Install the required libraries via pip:
 
 ```bash
 pip install requests prettytable
 ```
 
-### Cloner le dépôt
+### Clone the Repository
 
-Clonez ce dépôt GitHub sur votre machine locale :
+Clone this GitHub repository to your local machine:
 
 ```bash
 git clone https://github.com/HackfutSec/ProxGrab.git
 cd ProxGrab
 ```
 
-## Utilisation
+## Usage
 
-1. **Exécution du script** : Une fois le dépôt cloné et les dépendances installées, vous pouvez exécuter le script en lançant la commande suivante :
+1. **Run the Script**: Once you have cloned the repository and installed dependencies, you can run the script by executing the following command:
 
 ```bash
 python proxgrab.py
 ```
 
-2. **Sélection du type de proxy** : L'outil vous demandera de choisir le type de proxy que vous souhaitez récupérer :
+2. **Select Proxy Type**: The tool will prompt you to choose the type of proxy you want to grab:
     - **1 - HTTP**
     - **2 - SOCKS4**
     - **3 - SOCKS5**
 
-3. **Sélection du pays** : Ensuite, vous devrez choisir un code pays (par exemple, "1" pour les États-Unis, "2" pour le Canada, etc.).
+3. **Select Country**: Then, you’ll be asked to choose a country code (e.g., "1" for the United States, "2" for Canada, etc.).
 
-4. **Sélection du nombre de proxies** : L'outil vous demandera combien de proxies vous souhaitez récupérer. Vous pouvez spécifier un nombre précis.
+4. **Enter Number of Proxies**: The tool will then ask how many proxies you want to retrieve. You can specify a number of proxies to fetch.
 
-5. **Sauvegarde des proxies valides** : Une fois les proxies récupérés et validés, ils seront sauvegardés dans un fichier texte. Si le fichier existe déjà, un suffixe numérique sera ajouté pour créer un nom unique.
+5. **Save Valid Proxies**: After fetching and verifying the proxies, they will be saved to a text file. If the file already exists, a numeric suffix will be added to create a unique filename.
 
-## Exemple d'exécution
+## Example Output
 
-Voici un exemple de sortie possible :
+Here’s an example of what the output may look like:
 
 ```
 [!] Select the type of proxy you want:
@@ -107,10 +95,10 @@ Fetching proxies...
 [!] Valid proxies saved in HTTP_US_Proxy.txt
 ```
 
-## Avertissement
+## Disclaimer
 
-**[Warning]** L'utilisation de cet outil pour des activités malveillantes ou illégales est strictement interdite. L'auteur de ce projet ne sera pas tenu responsable de l'utilisation abusive de cet outil.
+**[Warning]** The use of this tool for malicious or illegal activities is strictly prohibited. The author of this project will not be held responsible for any misuse of this tool.
 
 ## License
 
-Ce projet est sous la licence **MIT**.
+This project is licensed under the **MIT License**.
